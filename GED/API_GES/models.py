@@ -9,14 +9,14 @@ class Categories(models.Model):
     
     
 class Historique(models.Model):
-    # id_document = models.CharField()
+    id_document = models.CharField(max_length=50, default=" ")
     nom_doc_h  = models.CharField(max_length=50, default=" ")
     
     
   
     
 class Documents(models.Model):
-    # id_doc = models.CharField(max_length=50, default=" ")
+    id_doc = models.CharField(max_length=50, default=" ")
     nom_doc  = models.CharField(max_length=50, default=" ")
     date_creation = models.DateField()
     date_archivage = models.DateField()
